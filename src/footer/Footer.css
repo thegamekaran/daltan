@@ -1,0 +1,22 @@
+/* Footer.css */
+.footer {
+    width: 100%;
+    height: 50px;
+    background-color: #fff; /* Change to white or a light color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer .lines {
+    width: 90%;
+    height: 2px;
+    background-image: repeating-linear-gradient(
+      to right,
+      black 0%,
+      black 10%,
+      transparent 10%,
+      transparent 20%
+    );
+  }
+  

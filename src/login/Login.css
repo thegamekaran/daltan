@@ -1,0 +1,162 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .login-container {
+    display: flex;
+    height: 100vh;
+  }
+  
+  /* Left Section */
+  .login-left {
+    flex: 1;
+    background: linear-gradient(135deg, #87CEFA, #FFFFFF, #FFB6C1); /* Blue, White, and Light Red gradient */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for text */
+  }
+  
+  .login-left h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #333; /* Neutral dark color for better contrast */
+  }
+  
+  .login-left p {
+    font-size: 1.2rem;
+    text-align: center;
+    max-width: 300px;
+    color: #333; /* Neutral dark color */
+  }
+  
+  /* Right Section */
+  .login-right {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  
+  .login-right h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    color: #007bff;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .login-form input {
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .register-btn {
+    background: linear-gradient(135deg, #fc466b, #6c63ff);
+    border: none;
+    color: white;
+    padding: 0.8rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .register-btn:hover {
+    background: linear-gradient(135deg, #6c63ff, #fc466b);
+  }
+  
+  /* Footer Links */
+  .login-footer {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  
+  .login-footer a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .login-footer a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Divider */
+  .divider {
+    margin: 1.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .divider span {
+    font-size: 0.9rem;
+    color: #777;
+  }
+  
+  /* Social Login */
+  .social-login {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .social-btn {
+    padding: 0.8rem 1.2rem;
+    font-size: 1.2rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .social-btn.google {
+    background-color: #fff;
+  }
+  
+  .social-btn.apple {
+    background-color: #000;
+    color: white;
+  }
+
+  .form-group {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+  }
+  
+  .form-group.error input {
+    border-color: red;
+  }
+  
+  .error-text {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+    position: absolute;
+  }
+  
+  
+  
