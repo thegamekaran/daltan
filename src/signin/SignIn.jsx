@@ -1,10 +1,13 @@
 import React, { useState } from "react";
 import "./SignIn.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [errors, setErrors] = useState({});
+
+  const navigate = useNavigate();
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -16,7 +19,7 @@ const SignIn = () => {
     setErrors(newErrors);
 
     if (Object.keys(newErrors).length === 0) {
-      // Proceed with login
+      navigate("/");
       console.log("Logging in with:", { email, password });
     }
   };
@@ -77,7 +80,7 @@ const SignIn = () => {
           </button>
         </div>
         <p className="login-footer">
-          Don’t have an account yet? <a href="/register">Register</a>
+          Don’t have an account yet? <Link to="/sign-up">Register</Link>
         </p>
       </div>
       <div className="login-left">

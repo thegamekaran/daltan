@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./Login.css";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
   const [formData, setFormData] = useState({
@@ -38,9 +39,12 @@ const Login = () => {
     setErrors({ ...errors, [e.target.name]: "" });
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      navigate("/");
       alert("Form submitted successfully!");
     }
   };
@@ -110,7 +114,7 @@ const Login = () => {
           </button>
         </form>
         <p className="login-footer">
-          Already have an account? <a href="/login">Login Now</a>
+          Already have an account? <Link to="/sign-in">Login Now</Link>
         </p>
         <div className="divider">
           <span>OR</span>

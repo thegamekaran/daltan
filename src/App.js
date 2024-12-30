@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useLocation } from "react-router-dom";
 import "./App.css";
 import Footer from "./footer/Footer";
 import Header from "./header/Header";
@@ -14,37 +14,38 @@ import OurServices from "./pages/ourServices/OurServices";
 import Partners from "./pages/partners/Partners";
 import AnimationIamge from "./pages/animationimage/AnimationIamge";
 
+function Layout() {
+  const location = useLocation();
+
+  // Paths where Header and Footer should not be displayed
+  const hideHeaderFooter = ["/sign-up", "/sign-in"].includes(location.pathname);
+
+  return (
+    <>
+      {!hideHeaderFooter && <Header />}
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sign-up" element={<Login />} />
+        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/our-product" element={<OurProducts />} />
+        <Route path="/info" element={<UserForm />} />
+        <Route path="/verification" element={<VerifyPage />} />
+        <Route path="/destination" element={<Destination />} />
+        <Route path="/universities" element={<Universities />} />
+        <Route path="/services" element={<OurServices />} />
+        <Route path="/partners" element={<Partners />} />
+        <Route path="/image" element={<AnimationIamge />} />
+      </Routes>
+      {!hideHeaderFooter && <Footer />}
+    </>
+  );
+}
+
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter>
-        <Header />
-
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/sign-up" element={<Login />} />
-          <Route path="/sign-in" element={<SignIn />} />
-          <Route path="/our-product" element={<OurProducts />} />
-          <Route path="/info" element={<UserForm />} />
-          <Route path="/verification" element={<VerifyPage />} />
-          <Route path="/destination" element={<Destination />} />
-          <Route path="/universities" element={<Universities />} />
-          <Route path="/services" element={<OurServices />} />
-          <Route path="/partners" element={<Partners />} />
-          <Route path="/image" element={<AnimationIamge />} />
-        </Routes>
-
-        <Footer />
-      </BrowserRouter>
-      {/* <Home /> */}
-      {/* <Login /> */}
-      {/* <SignIn /> */}
-      {/* <UserForm /> */}
-      {/* <VerifyPage /> */}
-      {/* <Destination /> */}
-      {/* <Universities /> */}
-      {/* <OurProducts /> */}
-    </div>
+    <BrowserRouter>
+      <Layout />
+    </BrowserRouter>
   );
 }
 

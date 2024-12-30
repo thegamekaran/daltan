@@ -22,31 +22,37 @@
     color: #555;
   }
   
-  .images {
-    position: relative;
-    max-width: 50%;
+  
+  
+   .image-1 {
+    animation: float1 3s ease-in-out infinite;
   }
   
-  .images .image-1 {
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 550px;
-    border-radius: 10px;
-    transition: transform 0.3s, opacity 0.3s;
+   .image-2 {
+    animation: float2 3s ease-in-out infinite;
   }
   
-  .images .image-2 {
-    position: absolute;
-    top: 300px;
-    left: 250px;
-    z-index: 2;
-    width: 500px;
-    border-radius: 10px;
-    transition: transform 0.3s, opacity 0.3s;
+  @keyframes float1 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   
-  .images img:hover {
-    transform: scale(1.05);
-    opacity: 0.9;
+  @keyframes float2 {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
+  
