@@ -18,7 +18,12 @@ function Layout() {
   const location = useLocation();
 
   // Paths where Header and Footer should not be displayed
-  const hideHeaderFooter = ["/sign-up", "/sign-in"].includes(location.pathname);
+  const hideHeaderFooter = [
+    "/sign-up",
+    "/sign-in",
+    "/info",
+    "/verification",
+  ].includes(location.pathname);
 
   return (
     <>

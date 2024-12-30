@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const UserForm = () => {
   const [formData, setFormData] = useState({
@@ -34,9 +35,12 @@ const UserForm = () => {
     return Object.keys(newErrors).length === 0;
   };
 
+  const navigate = useNavigate();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     if (validateForm()) {
+      navigate("/verification");
       alert("Form submitted successfully!");
       console.log(formData);
     }
