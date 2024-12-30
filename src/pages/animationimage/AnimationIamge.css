@@ -1,0 +1,88 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ffe4e1, #e4dfff);
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    text-align: center;
+    position: relative;
+  }
+  
+  .card {
+    width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .static-card {
+    position: relative;
+    z-index: 1;
+  }
+  
+  .animated-card {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 0;
+    transition: transform 1s ease-in-out;
+  }
+  
+  .left-animation {
+    left: -350px;
+  }
+  
+  .right-animation {
+    right: -350px;
+  }
+  
+  .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+    font-size: 1.2rem;
+  }
+  
+  .card p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+  
+  .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #7f00ff, #e100ff);
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .cta-button:hover {
+    background: linear-gradient(to right, #e100ff, #7f00ff);
+  }
+  
+  /* Animation.css */
+  .left-animation:hover {
+    transform: translate(50%, -50%);
+  }
+  
+  .right-animation:hover {
+    transform: translate(-50%, -50%);
+  }
+  

@@ -10,6 +10,9 @@ import OurProducts from "./pages/ourProduct/OurProducts";
 import Universities from "./pages/universitites/Universities";
 import SignIn from "./signin/SignIn";
 import UserForm from "./useForm/UseForm";
+import OurServices from "./pages/ourServices/OurServices";
+import Partners from "./pages/partners/Partners";
+import AnimationIamge from "./pages/animationimage/AnimationIamge";
 
 function App() {
   return (
@@ -26,6 +29,9 @@ function App() {
           <Route path="/verification" element={<VerifyPage />} />
           <Route path="/destination" element={<Destination />} />
           <Route path="/universities" element={<Universities />} />
+          <Route path="/services" element={<OurServices />} />
+          <Route path="/partners" element={<Partners />} />
+          <Route path="/image" element={<AnimationIamge />} />
         </Routes>
 
         <Footer />

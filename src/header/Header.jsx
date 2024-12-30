@@ -49,6 +49,20 @@ const Header = () => {
         >
           Our Services
         </Link>
+        <Link
+          to="/partners"
+          className={selected === "partners" ? "selected" : ""}
+          onClick={() => handleSelect("partners")}
+        >
+          Partners
+        </Link>
+        <Link
+          to="/image"
+          className={selected === "image" ? "selected" : ""}
+          onClick={() => handleSelect("image")}
+        >
+          Image
+        </Link>
         <a href="">
           <FiSearch size={20} />
         </a>{" "}
