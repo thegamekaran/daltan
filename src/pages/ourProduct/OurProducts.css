@@ -4,10 +4,11 @@
     justify-content: center;
     gap: 50px;
     padding: 40px;
+    height: 600px;
   }
   
   .text-section {
-    max-width: 50%;
+    max-width: 40%;
     text-align: left;
   }
   

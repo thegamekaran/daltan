@@ -4,8 +4,9 @@ import Header from "../../header/Header";
 
 const Home = () => {
   return (
-    <main className="home">
-      <div className="content">
+    <section className="home">
+      <div className="conter home_flx">
+      <div className="home_l">
         <h1>About The Company</h1>
         <p>
           At Daltin, we connect students with universities worldwide through our
@@ -17,7 +18,10 @@ const Home = () => {
           world, transforming lives through education.
         </p>
       </div>
-      <div className="images">
+
+      </div>
+      <div className="home_r">
+      <div className="home_r_inr">
         <img
           src="https://unsplash.it/200/150"
           alt="Graduates"
@@ -25,7 +29,8 @@ const Home = () => {
         />
         <img src="https://unsplash.it/300/200" alt="Team" className="image-2" />
       </div>
-    </main>
+      </div>
+    </section>
   );
 };
 

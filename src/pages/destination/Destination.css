@@ -3,6 +3,8 @@
     display: flex;
     padding: 40px;
     align-items: center;
+    height: 600px;
+    justify-content: center;
   }
   
   .image-section {
@@ -43,8 +45,8 @@
     text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
   }
   
-  .text-section {
-    margin-left: 50px;
+  .destination-content .text-section {
+    margin-left: 90px;
   }
   
   .text-section h1 {

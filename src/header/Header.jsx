@@ -11,7 +11,8 @@ const Header = () => {
   };
 
   return (
-    <div className="header">
+    <header className="header">
+      <div className="conter header_flx">
       <div className="logo">Logo</div>
       <nav className="nav">
         <Link
@@ -69,7 +70,9 @@ const Header = () => {
       </nav>
 
       <button className="explore-button">Talk to Experts</button>
-    </div>
+      </div>
+      <button type="button" className="ai_btn">Explore Ai Coures Finder</button>
+    </header>
   );
 };
 

@@ -4,10 +4,7 @@ body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to right, #ffe4e1, #e4dfff);
     color: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+
   }
   
   .container {

@@ -4,7 +4,7 @@ import "./VerifyPage.css";
 
 const VerifyPage = () => {
   return (
-    <div className="container">
+    <div className="container verify_sec">
       <div className="verification-box">
         <h1 className="title">Verify Your Code</h1>
         <p className="subtitle">

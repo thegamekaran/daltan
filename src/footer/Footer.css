@@ -1,14 +1,15 @@
 /* Footer.css */
 .footer {
     width: 100%;
-    height: 50px;
-    background-color: #fff; /* Change to white or a light color */
+    background: linear-gradient(to right, #ffe4e1, #e4dfff);
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 10px 0;
+    overflow: hidden;
   }
   
-  .footer .lines {
+  /* .footer .lines {
     width: 90%;
     height: 2px;
     background-image: repeating-linear-gradient(
@@ -18,5 +19,14 @@
       transparent 10%,
       transparent 20%
     );
-  }
+  } */
+  .footer .lines {
+    height: 40px;
+    display: inline-block;
+    padding-left: 20px;
+    border-left: 2px solid #333;
+}
+.footer .lines:nth-child(even) {
+  height: 60px;
+}
   

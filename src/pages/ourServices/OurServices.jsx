@@ -3,6 +3,8 @@ import "./OurServices.css";
 
 const OurServices = () => {
   return (
+    <section className="our_sec">
+    <div className="conter">
     <div className="usps-container">
       <div className="usps-content">
         <h1>Our USPs</h1>
@@ -43,6 +45,8 @@ const OurServices = () => {
         />
       </div>
     </div>
+    </div>
+    </section>
   );
 };
 

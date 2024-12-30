@@ -4,6 +4,8 @@ import "./AnimationIamge.css";
 
 const AnimationIamge = () => {
   return (
+    <section className="animation_sec">
+      <div className="conter">
     <div className="container">
       <div className="card static-card">
         <img src="https://unsplash.it/200/150" alt="Stay in the Loop" />
@@ -31,6 +33,8 @@ const AnimationIamge = () => {
 
       <button className="cta-button">Let’s get started</button>
     </div>
+    </div>
+    </section>
   );
 };
 

@@ -22,10 +22,17 @@ const partnerslist = [
     name: "Partner 4",
     image: "https://unsplash.it/205/150",
   },
+  {
+    id: 5,
+    name: "Partner 5",
+    image: "https://unsplash.it/205/150",
+  },
 ];
 
 const Partners = () => {
   return (
+    <section className="our_partner">
+      <div className="conter">
     <div className="partners-container">
       <h1>Our Partners</h1>
       <p>
@@ -46,6 +53,8 @@ const Partners = () => {
         ))}
       </div>
     </div>
+    </div>
+    </section>
   );
 };
 
