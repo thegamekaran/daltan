@@ -6,16 +6,15 @@ const Destination = () => {
     <div className="destination-content">
       <div className="image-section">
         <img
-          src="https://unsplash.it/200/150"
+          src="https://images.unsplash.com/photo-1519791883288-dc8bd696e667?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c3RvcnklMjB0byUyMGJ1aWx0JTIwdGhlJTIwY29tcGFueXxlbnwwfHwwfHx8MA%3D%3D"
           alt="Meeting"
           className="image primary"
         />
         <img
-          src="https://unsplash.it/300/200"
+          src="https://images.unsplash.com/photo-1617575521317-d2974f3b56d2?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHN0b3J5JTIwdG8lMjBidWlsdCUyMHRoZSUyMGNvbXBhbnl8ZW58MHx8MHx8fDA%3D"
           alt="Meeting"
           className="image secondary"
         />
-        <div className="year">2023</div>
       </div>
       <div className="text-section">
         <h1>Our Story</h1>

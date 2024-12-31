@@ -15,12 +15,12 @@ const OurProducts = () => {
       </div>
       <div className="image-section">
         <img
-          src="https://unsplash.it/200/150"
+          src="https://plus.unsplash.com/premium_photo-1683121710572-7723bd2e235d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YXJ0aWZpY2FsJTIwaW50ZWxsaWdlbmNlfGVufDB8fDB8fHww"
           alt="Product 1"
           className="image primary"
         />
         <img
-          src="https://unsplash.it/400/500"
+          src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8YXJ0aWZpY2FsJTIwaW50ZWxsaWdlbmNlfGVufDB8fDB8fHww"
           alt="Product 2"
           className="image secondary"
         />

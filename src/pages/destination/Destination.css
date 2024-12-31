@@ -61,3 +61,12 @@
     line-height: 1.6;
   }
   
+
+  /* Make other image transparent when hovering on one */
+.image.primary:hover ~ .image.secondary,
+.image.secondary:hover ~ .image.primary {
+    opacity: 0.3;
+}
+.image {
+  transition: transform 0.5s, opacity 0.5s; /* Added opacity transition */
+}
