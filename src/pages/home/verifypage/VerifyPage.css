@@ -77,3 +77,6 @@ body {
     background: linear-gradient(to right, #f06292, #ff6f61);
   }
   
+  .container.verify_sec {
+    width: 20%;
+}

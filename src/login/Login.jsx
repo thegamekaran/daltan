@@ -109,7 +109,11 @@ const Login = () => {
               <span className="error-text">{errors.confirmPassword}</span>
             )}
           </div>
-          <button type="submit" className="register-btn">
+          <button
+            onClick={() => navigate("/info")}
+            type="submit"
+            className="register-btn"
+          >
             Register Now
           </button>
         </form>
