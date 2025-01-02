@@ -1,6 +1,12 @@
 import React from "react";
 import "./Home.css";
 import Header from "../../header/Header";
+import Partners from "../partners/Partners";
+import Destination from "../destination/Destination";
+import Universities from "../universitites/Universities";
+import OurProducts from "../ourProduct/OurProducts";
+import OurServices from "../ourServices/OurServices";
+import AnimationIamge from "../animationimage/AnimationIamge";
 
 const Home = () => {
   return (
@@ -36,7 +42,24 @@ const Home = () => {
           </div>
         </div>
       </section>
-      {/* <Partners/> */}
+      <section className="partners">
+        <Destination />
+      </section>
+      <section className="partners">
+        <Universities />
+      </section>
+      <section className="partners">
+        <OurProducts />
+      </section>
+      <section className="partners">
+        <OurServices />
+      </section>
+      <section className="prtnr">
+        <Partners />
+      </section>
+      <section className="partners">
+        <AnimationIamge />
+      </section>
     </>
   );
 };
