@@ -8,6 +8,16 @@
   overflow: auto;
 }
 
+* {
+  scrollbar-width: none !important; 
+  -ms-overflow-style: none !important; 
+}
+
+*::-webkit-scrollbar {
+  display: none !important; 
+}
+
+
 .content {
   flex: 1;
   max-width: 50%;

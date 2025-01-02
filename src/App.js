@@ -32,14 +32,14 @@ function Layout() {
         <Route path="/" element={<Home />} />
         <Route path="/sign-up" element={<Login />} />
         <Route path="/sign-in" element={<SignIn />} />
-        {/* <Route path="/our-product" element={<OurProducts />} /> */}
+        <Route path="/our-product" element={<OurProducts />} />
         <Route path="/info" element={<UserForm />} />
         <Route path="/verification" element={<VerifyPage />} />
-        {/* <Route path="/destination" element={<Destination />} />
+        <Route path="/destination" element={<Destination />} />
         <Route path="/universities" element={<Universities />} />
         <Route path="/services" element={<OurServices />} />
-        <Route path="/image" element={<AnimationIamge />} /> */}
         <Route path="/partners" element={<Partners />} />
+        <Route path="/image" element={<AnimationIamge />} />
       </Routes>
       {!hideHeaderFooter && <Footer />}
     </>

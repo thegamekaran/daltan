@@ -27,42 +27,42 @@ const Header = () => {
             About Us
           </Link>
           <Link
-            to="/destination"
+            to="/"
             className={selected === "destinations" ? "selected" : ""}
             onClick={() => handleSelect("destinations")}
           >
             Destinations
           </Link>
           <Link
-            to="/universities"
+            to="/"
             className={selected === "universities" ? "selected" : ""}
             onClick={() => handleSelect("universities")}
           >
             Universities
           </Link>
           <Link
-            to="/our-product"
+            to="/"
             className={selected === "products" ? "selected" : ""}
             onClick={() => handleSelect("products")}
           >
             Our Products
           </Link>
           <Link
-            to="/services"
+            to="/"
             className={selected === "services" ? "selected" : ""}
             onClick={() => handleSelect("services")}
           >
             Our Services
           </Link>
           <Link
-            to="/partners"
+            to="/"
             className={selected === "partners" ? "selected" : ""}
             onClick={() => handleSelect("partners")}
           >
             Partners
           </Link>
           <Link
-            to="/image"
+            to="/"
             className={selected === "image" ? "selected" : ""}
             onClick={() => handleSelect("image")}
           >

@@ -11,7 +11,7 @@ import AnimationIamge from "../animationimage/AnimationIamge";
 const Home = () => {
   return (
     <>
-      <section className="home">
+      <section className="home hide-scrollbar">
         <div className="conter home_flx">
           <div className="home_l">
             <h1>About The Company</h1>
