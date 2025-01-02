@@ -9,7 +9,7 @@ const AnimationIamge = () => {
         <div className="container">
           <div className="card static-card">
             <img
-              src="https://files.oaiusercontent.com/file-HZ1yMCpEjseDUDXC7iFRNu?se=2024-12-31T08%3A08%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dbb7cc87b-f2ae-45f7-bde6-08543ab8f955.webp&sig=zscLEFsokmj%2BHEoPwWHr6vk9nQvQ0pg%2B9HswR/DlCRA%3D"
+              src="https://media.istockphoto.com/id/1976099664/photo/artificial-intelligence-processor-concept-ai-big-data-array.jpg?b=1&s=612x612&w=0&k=20&c=8_pC3MSWyeEdJYcb5bcv3JfInjuKlM-IGTAgJyXpyLI="
               alt="Stay in the Loop"
             />
             <h3>Stay in the Loop, Always</h3>
@@ -21,7 +21,7 @@ const AnimationIamge = () => {
 
           <div className="card animated-card left-animation">
             <img
-              src="https://files.oaiusercontent.com/file-Am1jdJWqmwAUVzxDJDB9GV?se=2024-12-31T08%3A09%3A30Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3a49c10b-2ae7-435e-b2ce-881d60b77874.webp&sig=NCHQJxqO8tTcOUmpsvKof%2BKFbhj1Z%2BZjz5v/0JhjyQ4%3D"
+              src="https://media.istockphoto.com/id/2149530993/photo/digital-human-head-concept-for-ai-metaverse-and-facial-recognition-technology.jpg?b=1&s=612x612&w=0&k=20&c=XfjE8RB5tOafi11x0ULuLBIr_lHijrGpx6ukKpcQGF0="
               alt="Perfect Match"
             />
             <h3>Perfect Match</h3>
@@ -30,7 +30,7 @@ const AnimationIamge = () => {
 
           <div className="card animated-card right-animation">
             <img
-              src="https://files.oaiusercontent.com/file-JxoCaCy8ZLVbmoJvxZJSmZ?se=2024-12-31T08%3A11%3A10Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dcf92bc1f-75c3-4903-9ebb-3d05d166b48b.webp&sig=79JhqUXkkTPXM4EYRfOrEI4bd65UAiz5qcM6BvOsuMo%3D"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvb3zQeiHglnuJ32B8dAztNG8_sfsDgI6oAg&s"
               alt="Expert Support"
             />
             <h3>Expert Support, Anytime</h3>

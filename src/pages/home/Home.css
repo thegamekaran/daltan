@@ -28,10 +28,13 @@
   
    .image-1 {
     animation: float1 3s ease-in-out infinite;
+    object-fit: cover;
   }
   
    .image-2 {
     animation: float2 3s ease-in-out infinite;
+    object-fit: cover;
+
   }
   
   @keyframes float1 {

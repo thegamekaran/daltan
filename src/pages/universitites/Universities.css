@@ -45,6 +45,7 @@
     border-radius: 10px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    
 } 
   
   .image:hover {
@@ -54,14 +55,20 @@
   
   .image.primary {
     transform: rotate(-5deg);
+    object-fit: cover;
+
   }
   
   .image.secondary {
     transform: rotate(5deg);
+    object-fit: cover;
+
   }
   
   .image.tertiary {
     transform: rotate(-3deg);
+    object-fit: cover;
+
   }
   
   .image.primary:hover,
