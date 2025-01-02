@@ -11,7 +11,7 @@ import AnimationIamge from "../animationimage/AnimationIamge";
 const Home = () => {
   return (
     <>
-      <section className="home hide-scrollbar">
+      <section id="about" className="home hide-scrollbar">
         <div className="conter home_flx">
           <div className="home_l">
             <h1>About The Company</h1>
@@ -42,22 +42,22 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="partners">
+      <section id="destinations" className="partners">
         <Destination />
       </section>
-      <section className="partners">
+      <section id="universities" className="partners">
         <Universities />
       </section>
-      <section className="partners">
+      <section id="products" className="partners">
         <OurProducts />
       </section>
-      <section className="partners">
+      <section id="services" className="partners">
         <OurServices />
       </section>
-      <section className="prtnr">
+      <section id="partners" className="prtnr">
         <Partners />
       </section>
-      <section className="partners">
+      <section id="image" className="partners">
         <AnimationIamge />
       </section>
     </>

@@ -1,84 +1,109 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Header.css";
 import { FiSearch } from "react-icons/fi";
-import { Link, Navigate, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 const Header = () => {
   const [selected, setSelected] = useState("about");
+  const [scrolled, setScrolled] = useState(false);
 
   const handleSelect = (item) => {
     setSelected(item);
   };
 
-  const navigate = useNavigate();
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
-    <header className="header">
+    <header className={`header ${scrolled ? "scrolled" : ""}`}>
       <div className="conter header_flx">
-        <div onClick={() => navigate("/")} className="logo">
+        <div className="logo" onClick={() => handleSelect("about")}>
           Logo
         </div>
         <nav className="nav">
-          <Link
-            to="/"
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
             className={selected === "about" ? "selected" : ""}
             onClick={() => handleSelect("about")}
           >
             About Us
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="destinations"
+            smooth={true}
+            duration={500}
             className={selected === "destinations" ? "selected" : ""}
             onClick={() => handleSelect("destinations")}
           >
             Destinations
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="universities"
+            smooth={true}
+            duration={500}
             className={selected === "universities" ? "selected" : ""}
             onClick={() => handleSelect("universities")}
           >
             Universities
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="products"
+            smooth={true}
+            duration={500}
             className={selected === "products" ? "selected" : ""}
             onClick={() => handleSelect("products")}
           >
             Our Products
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="services"
+            smooth={true}
+            duration={500}
             className={selected === "services" ? "selected" : ""}
             onClick={() => handleSelect("services")}
           >
             Our Services
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="partners"
+            smooth={true}
+            duration={500}
             className={selected === "partners" ? "selected" : ""}
             onClick={() => handleSelect("partners")}
           >
             Partners
-          </Link>
-          <Link
-            to="/"
+          </ScrollLink>
+          <ScrollLink
+            to="image"
+            smooth={true}
+            duration={500}
             className={selected === "image" ? "selected" : ""}
             onClick={() => handleSelect("image")}
           >
             Image
-          </Link>
+          </ScrollLink>
           <a href="">
             <FiSearch size={20} />
-          </a>{" "}
+          </a>
         </nav>
-
-        <button onClick={() => navigate("/sign-in")} className="explore-button">
-          Talk to Experts
-        </button>
+        <button className="explore-button">Talk to Experts</button>
       </div>
       <button type="button" className="ai_btn">
-        Explore Ai Coures Finder
+        Explore AI Courses Finder
       </button>
     </header>
   );
